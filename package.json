@@ -1,19 +1,23 @@
 {
   "name": "sass-development",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node.js on Docker",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nero-15/sass-development.git"
   },
-  "author": "",
+  "author": "nero-15 <nero15.dev@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nero-15/sass-development/issues"
   },
-  "homepage": "https://github.com/nero-15/sass-development#readme"
+  "homepage": "https://github.com/nero-15/sass-development#readme",
+  "dependencies": {
+    "express": "^4.16.1"
+  }
 }
