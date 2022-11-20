@@ -4,7 +4,7 @@ services:
   sass:
     build: ./
     image: sassdev
-    # ports:
-    #   - 8080:80
+    ports:
+      - 49160:8080
     # volumes:
     #   - ./src:/usr/share/nginx/html
