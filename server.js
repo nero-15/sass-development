@@ -1,6 +1,7 @@
 'use strict';
 
 const express = require('express');
+const path = require('path');
 
 // Constants
 const PORT = 8080;
@@ -8,8 +9,12 @@ const HOST = '0.0.0.0';
 
 // App
 const app = express();
+
+app.use('/', express.static(path.join(__dirname, 'public')));
+
 app.get('/', (req, res) => {
-    res.send('Hello World');
+    // res.send('Hello World');
+    res.sendFile(__dirname + '/view/index.html');
 });
 
 app.listen(PORT, HOST, () => {
